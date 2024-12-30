@@ -10,4 +10,4 @@
 
 ## Contacts
 - URL: 'contacts.html'
-- Description: Will have links to LinkedIn Profile and GitHub, as well as phone number and perhaps an email functionality
+- Description: Will have links to LinkedIn, and GitHub profile, as well as phone number and perhaps an email functionality
