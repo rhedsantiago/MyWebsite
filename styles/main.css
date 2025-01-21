@@ -11,6 +11,11 @@ header {
     text-align: center;
 }
 
+header h1 {
+    font-family: "Century Gothic";
+    font-weight: normal;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
