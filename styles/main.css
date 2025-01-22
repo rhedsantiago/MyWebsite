@@ -30,6 +30,12 @@ main {
     padding: 2em;
 }
 
+.circle-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+    object-fit: cover;
+}
 footer {
     background-color: #333;
     color: white;
