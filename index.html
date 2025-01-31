@@ -2,6 +2,7 @@
 <html lang = eng>
     <head>
        <meta  charset = "UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>Rhed Santiago - Homepage</title>
        <link rel = "stylesheet" href = "styles/main.css">
     </head>
@@ -15,17 +16,22 @@
                     <li><a href = "contact.html"> Contact </a></li>
                 </ul>
             </nav>
-        </header>
+        </header> 
         <main>
             <section>
                 <h2>About</h2>
                 <img src="assets/images/profilePic.jpg" class="circle-image">
-                <a href="https://github.com/rhedsantiago"><img src="assets/icons/githubIcon.svg"></a>
+                <figure> <!--USING FIGURE ALLOWS FOR ADDING A CAPTION TO IMAGES-->
+                    <a href="https://github.com/rhedsantiago" target="_blank">
+                        <img src="assets/icons/githubIcon.svg">
+                        <figcaption>Github</figcaption>
+                    </a>
+                </figure>
                 <p>I am a University of Texas at Dallas graduate with a Bachelor's in Computer Science</p>
             </section>
         </main>
         <footer>
-            <p>© 2025 Rhed Santiago</p>
+            <p>© 2025 Rhed Santiago. All rights reserved.</p>
         </footer>
     </body>
 </html>
