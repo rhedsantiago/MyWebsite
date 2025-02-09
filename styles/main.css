@@ -5,17 +5,42 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #000;
     color: white;
     padding: 1em;
-    text-align: center;
+    border-bottom: 2px solid #eca14f;
 }
 
-header h1 {
+.flex-container-header {
+ display: flex;
+ justify-content: space-between;
+}
+
+.flex-box {
+    /*background-color: green; */      /*<----uncomment to see container borders */
+    width: 49%;
+}
+
+.name-heading-container{
+    min-width: 387px;
+}
+/* keep these colors in case of a need, kinda fiery when used in a gradient : ff5733, ffcc33*/
+.name-heading {
     font-family: "Century Gothic";
+    font-size: 3em;
     font-weight: normal;
+    margin: 15px 0 -2em 0; /*top right bottom left */
+    background: linear-gradient(180deg, #5f401f 0%, #eca14f 50%, #5f401f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
+nav {
+    background-color: grey;
+    text-align: right;
+}
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -28,6 +53,7 @@ nav ul li {
 
 main {
     padding: 2em;
+    background-color: #1a1a1a;
 }
 
 .circle-image {
