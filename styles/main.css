@@ -17,13 +17,14 @@ header {
 }
 
 .flex-box {
-    /*background-color: green; */      /*<----uncomment to see container borders */
+    /*background-color: green; */     /*<----uncomment to see container borders */
     width: 49%;
 }
 
 .name-heading-container{
-    min-width: 387px;
+    min-width: 387px; 
 }
+
 /* keep these colors in case of a need, kinda fiery when used in a gradient : ff5733, ffcc33*/
 .name-heading {
     font-family: "Century Gothic";
@@ -34,12 +35,15 @@ header {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
+.navbar-container {
+    min-width: 280px;
+}
 nav {
-    background-color: grey;
+    /*background-color: grey;*/    /*<---- uncomment to see container borders*/
     text-align: right;
+    margin: 50px 0 -2em 0;
 }
 nav ul {
     list-style-type: none;
@@ -54,6 +58,7 @@ nav ul li {
 main {
     padding: 2em;
     background-color: #1a1a1a;
+    min-height: 750px;
 }
 
 .circle-image {
@@ -64,11 +69,10 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: #771818;
     color: white;
     text-align: center;
     padding: 1em;
     position: relative;
-    width: 100%;
     bottom: 0;
 }
