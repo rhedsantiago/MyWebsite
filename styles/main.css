@@ -1,3 +1,4 @@
+
 body {
     font-family: "Century Gothic", Arial, sans-serif;
     margin: 0;
@@ -14,6 +15,7 @@ header {
 .flex-container-header {
  display: flex;
  justify-content: space-between;
+ width: 100%;
 }
 
 .flex-box {
@@ -27,10 +29,10 @@ header {
 
 /* keep these colors in case of a need, kinda fiery when used in a gradient : ff5733, ffcc33*/
 .name-heading {
-    font-family: "Century Gothic";
+    font-family: "Century Gothic", sans-serif;
     font-size: 3em;
     font-weight: normal;
-    margin: 15px 0 -2em 0; /*top right bottom left */
+    margin: 25px 0 -2em 0; /*top right bottom left */
     background: linear-gradient(180deg, #5f401f 0%, #eca14f 50%, #5f401f 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -38,7 +40,7 @@ header {
 }
 
 .navbar-container {
-    min-width: 280px;
+    min-width: 350px;
 }
 nav {
     /*background-color: grey;*/    /*<---- uncomment to see container border s*/
@@ -52,13 +54,23 @@ nav ul {
 
 nav ul li {
     display: inline;
+    font-size: 1.6em;
     margin-right: 1em;
+    background: linear-gradient(180deg, #5f401f 0%, #eca14f 50%, #5f401f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 main {
     padding: 2em;
-    background-color: #1a1a1a;
+    background: linear-gradient(45deg, #0e0c11 0%, #0e0c11 20%, #221e29 100%);
     min-height: 750px;
+}
+
+.welcome {
+    text-align: center;
+    color: #fff;
 }
 
 .circle-image {
@@ -69,7 +81,7 @@ main {
 }
 
 footer {
-    background-color: #771818;
+    background-color: #0f0f0f;
     color: white;
     text-align: center;
     padding: 1em;
