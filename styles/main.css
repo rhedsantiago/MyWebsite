@@ -6,10 +6,12 @@ body {
 }
 
 header {
-    background-color: #000;
+    background: linear-gradient(180deg, #222122 0%, #000 50%, #000 100%);
     color: white;
-    padding: 1em;
+    padding: 1em 0 1em 0;
     border-bottom: 2px solid #eca14f;
+    width: 100vw;
+
 }
 
 .flex-container-header {
@@ -21,10 +23,11 @@ header {
 .flex-box {
     /*background-color: green; */     /*<----uncomment to see container borders */
     width: 49%;
+    flex-wrap: wrap;
 }
 
 .name-heading-container{
-    min-width: 387px; 
+    min-width: 400px; 
 }
 
 /* keep these colors in case of a need, kinda fiery when used in a gradient : ff5733, ffcc33*/
@@ -40,7 +43,7 @@ header {
 }
 
 .navbar-container {
-    min-width: 350px;
+    min-width: 450px;
 }
 nav {
     /*background-color: grey;*/    /*<---- uncomment to see container border s*/
@@ -62,13 +65,23 @@ nav ul li {
     -webkit-text-fill-color: transparent;
 }
 
-main {
-    padding: 2em;
-    background: linear-gradient(45deg, #0e0c11 0%, #0e0c11 20%, #221e29 100%);
-    min-height: 750px;
+.current-page {
+    border: 1px solid #7c562c;
+    border-top: none;
+}
+.navlink {
+    margin: 0 .5em 0 .5em;
 }
 
-.welcome {
+main {
+    padding: 2em 0 2em 0;
+    background: linear-gradient(45deg, #0e0c11 0%, #0e0c11 20%, #221e29 100%);
+    min-height: 750px;
+    color: #e2e2e2;
+    width: 100vw;
+}
+
+.welcome-section{
     text-align: center;
     color: #fff;
 }
@@ -84,7 +97,8 @@ footer {
     background-color: #0f0f0f;
     color: white;
     text-align: center;
-    padding: 1em;
+    padding: 1em 0 1em 0;
     position: relative;
     bottom: 0;
+    width: 100vw;
 }
