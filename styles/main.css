@@ -8,10 +8,8 @@ body {
 header {
     background: linear-gradient(180deg, #222122 0%, #000 50%, #000 100%);
     color: white;
-    padding: 1em 0 1em 0;
+    padding: 1em;
     border-bottom: 2px solid #eca14f;
-    width: 100vw;
-
 }
 
 .flex-container-header {
@@ -58,7 +56,7 @@ nav ul {
 nav ul li {
     display: inline;
     font-size: 1.6em;
-    margin-right: 1em;
+    margin-right: 0.5em;
     background: linear-gradient(180deg, #5f401f 0%, #eca14f 50%, #5f401f 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -71,21 +69,53 @@ nav ul li {
 }
 .navlink {
     margin: 0 .5em 0 .5em;
+    font-family: "Century Gothic", sans-serif;
 }
 
 main {
-    padding: 2em 0 2em 0;
+    padding: 2em;
     background: linear-gradient(45deg, #0e0c11 0%, #0e0c11 20%, #221e29 100%);
     min-height: 750px;
     color: #e2e2e2;
-    width: 100vw;
 }
 
 .welcome-section{
+    padding: 25vh 0 35vh 0;
     text-align: center;
     color: #fff;
 }
 
+.projects-section {
+    border-top: 1.5px solid #eca14f;
+    text-align: center;
+}
+
+.projects-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;  /*distance between arrows and the container*/
+}
+
+.projects-container {
+    background-color: #022209;
+    width: 90%;
+    overflow: hidden;
+}
+
+.projects-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project {
+    border: 1px solid white;
+    min-width: 28.8%;
+    min-height: 10em;
+    padding: 20px;
+    margin: 0 1em 0 1em;
+    background: tan;
+}
 .circle-image {
     width: 300px;
     height: 300px;
@@ -97,8 +127,7 @@ footer {
     background-color: #0f0f0f;
     color: white;
     text-align: center;
-    padding: 1em 0 1em 0;
+    padding: 1em;
     position: relative;
     bottom: 0;
-    width: 100vw;
 }

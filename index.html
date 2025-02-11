@@ -17,7 +17,7 @@
                         <ul>
                             <li class="current-page"><a class = "navlink" href = "index.html">Home</a></li>
                             <li><a id="aboutlink" class = "navlink" href = "about.html">About</a></li>
-                            <li><a id="contactlink" class = "navlink" href = "contact.html"> Contact </a></li>
+                            <li><a id="contactlink" class = "navlink" href = "contact.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -27,13 +27,23 @@
             <section class="welcome-section">
                 <div class="entry-message">
                 <p class="">Hey, welcome to my website!</p>
-                <p class="">I am a University of Texas at Dallas graduate with a Bachelor's in Computer Science. Feel free to look around!</p>
+                <p class="">I am a University of Texas at Dallas graduate with a Bachelor's in Computer Science. Feel free to look around.</p>
                 </div>
             </section>
             <section class="projects-section">
                 <h2>PROJECTS</h2>
-                <div class="flex-container-projects">
-                    
+                <div class="projects-carousel">
+                    <button class="prev">&lt;</button>
+                    <div class="projects-container"> <!-- what is seen / window-->
+                        <div class="projects-wrapper"> <!--contents go here-->
+                            <div class="project">Proj 1</div>
+                            <div class="project">Proj 2</div>
+                            <div class="project">Proj 3</div>
+                            <div class="project">Proj 4</div>
+                            <div class="project">Proj 5</div>
+                        </div>
+                    </div>
+                    <button class="next">&gt;</button>
                 </div>
             </section>
             <section>
@@ -49,5 +59,8 @@
         <footer>
             <p>© 2025 Rhed Santiago. All rights reserved.</p>
         </footer>
+
+        <!-- js files -->
+        <script src="scripts/carousel.js"></script>
     </body>
 </html>
