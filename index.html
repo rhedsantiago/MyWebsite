@@ -5,6 +5,7 @@
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>Rhed Santiago - Homepage</title>
        <link rel = "stylesheet" href = "styles/main.css">
+       <script src="scripts/carousel.js" defer></script>
     </head>  
     <body>
         <header>
@@ -30,21 +31,40 @@
                 <p class="">I am a University of Texas at Dallas graduate with a Bachelor's in Computer Science. Feel free to look around.</p>
                 </div>
             </section>
-            <section class="projects-section">
+            <section aria-label="Project Highlights" class="projects-section">
                 <h2>PROJECTS</h2>
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                    <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <div>project1</div>
+                        </li>
+                        <li class="slide">
+                            <div>project2</div>
+                        </li>
+                        <li class="slide">
+                            <div>project3</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--
                 <div class="projects-carousel">
                     <button class="prev">&lt;</button>
-                    <div class="projects-container"> <!-- what is seen / window-->
-                        <div class="projects-wrapper"> <!--contents go here-->
+                    <div class="projects-container">   what is seen / window
+                        <div class="projects-wrapper">  contents go here
                             <div class="project">Proj 1</div>
                             <div class="project">Proj 2</div>
                             <div class="project">Proj 3</div>
                             <div class="project">Proj 4</div>
                             <div class="project">Proj 5</div>
+                            <div class="project">Proj 6</div>
                         </div>
                     </div>
                     <button class="next">&gt;</button>
                 </div>
+                -->
             </section>
             <section>
                 <figure> <!--USING FIGURE ALLOWS FOR ADDING A CAPTION TO IMAGES-->
@@ -59,8 +79,5 @@
         <footer>
             <p>© 2025 Rhed Santiago. All rights reserved.</p>
         </footer>
-
-        <!-- js files -->
-        <script src="scripts/carousel.js"></script>
     </body>
 </html>

@@ -14,6 +14,7 @@ header {
 
 .flex-container-header {
  display: flex;
+ flex-direction: row;
  justify-content: space-between;
  width: 100%;
 }
@@ -25,13 +26,13 @@ header {
 }
 
 .name-heading-container{
-    min-width: 400px; 
+    min-width: 350px; 
 }
 
 /* keep these colors in case of a need, kinda fiery when used in a gradient : ff5733, ffcc33*/
 .name-heading {
     font-family: "Century Gothic", sans-serif;
-    font-size: 3em;
+    font-size: 2.7em;
     font-weight: normal;
     margin: 25px 0 -2em 0; /*top right bottom left */
     background: linear-gradient(180deg, #5f401f 0%, #eca14f 50%, #5f401f 100%);
@@ -90,32 +91,96 @@ main {
     text-align: center;
 }
 
+/*c------------------------------carousel stuff------------------------*/
+/* 
 .projects-carousel {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;  /*distance between arrows and the container*/
+    gap: 10px;  
 }
 
 .projects-container {
     background-color: #022209;
     width: 90%;
     overflow: hidden;
+    position: relative;
 }
 
 .projects-wrapper {
+    width: 300%;
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
+*/
 
-.project {
-    border: 1px solid white;
-    min-width: 28.8%;
-    min-height: 10em;
-    padding: 20px;
-    margin: 0 1em 0 1em;
-    background: tan;
+.carousel {
+    width: 100%;
+    height:50vh;
+    position: relative;
 }
+
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.slide {
+    background: linear-gradient(90deg, #333, #eee);
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+.slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0,0,0,.1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0,0,0,.2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
+
+/*---------------------------------------------------------------------------*/
 .circle-image {
     width: 300px;
     height: 300px;
