@@ -91,28 +91,10 @@ main {
     text-align: center;
 }
 
+.projects-heading {
+    margin-top: 2em;
+}
 /*c------------------------------carousel stuff------------------------*/
-/* 
-.projects-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;  
-}
-
-.projects-container {
-    background-color: #022209;
-    width: 90%;
-    overflow: hidden;
-    position: relative;
-}
-
-.projects-wrapper {
-    width: 300%;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-*/
 
 .carousel {
     width: 100%;
@@ -125,14 +107,15 @@ main {
     padding: 0;
     list-style: none;
 }
+
 .slide {
-    background: linear-gradient(90deg, #333, #eee);
     position: absolute;
     inset: 0;
     opacity: 0;
     transition: 200ms opacity ease-in-out;
     transition-delay: 200ms;
 }
+
 .slide > img {
     display: block;
     width: 100%;
@@ -181,21 +164,35 @@ main {
 }
 
 .project {
-    background-color: red;
+    background: linear-gradient(45deg,#222222 0%, #000 30%, #2a2a2a 100%);
     margin: 5em 1em 0 1em;
     padding: 0 auto;
     width: 42%;
     height: 65%;
     display: inline-block;
     position: center;
+    border: 3px solid #eca14f;
+    border-radius: 0.5em 0.5em 1em 4em;
+    overflow: hidden; /*To prevent the images from interfering with the other project blocks*/
 }
 
+.project-img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.company-database {
+    object-position: center;
+}
 /*---------------------------------------------------------------------------*/
 .circle-image {
     width: 300px;
     height: 300px;
     border-radius: 30%;
     object-fit: cover;
+    overflow: hidden;
 }
 
 footer {
