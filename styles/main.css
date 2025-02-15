@@ -30,6 +30,7 @@ header {
 }
 
 /* keep these colors in case of a need, kinda fiery when used in a gradient : ff5733, ffcc33*/
+
 .name-heading {
     font-family: "Century Gothic", sans-serif;
     font-size: 2.7em;
@@ -45,7 +46,7 @@ header {
     min-width: 450px;
 }
 nav {
-    /*background-color: grey;*/    /*<---- uncomment to see container border s*/
+    /*background-color: grey;*/    /*<---- uncomment to see container borders*/
     text-align: right;
     margin: 50px 0 -2em 0;
 }
@@ -72,6 +73,10 @@ nav ul {
 .current-page {
     border: 1px solid #7c562c;
     border-top: none;
+}
+
+.not-current-page {
+    border: 1px transparent;
 }
 
 .navlink {
