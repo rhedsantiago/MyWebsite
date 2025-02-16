@@ -92,11 +92,17 @@ main {
 }
 
 .welcome-section{
-    padding: 25vh 0 35vh 0;
     text-align: center;
     color: #fff;
 }
 
+.entry-message{
+    padding: 25vh 0 35vh 0;
+}
+
+button {
+   margin-bottom: 2em;
+}
 .projects-section {
     border-top: 1.5px solid #eca14f;
     text-align: center;
